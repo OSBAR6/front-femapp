@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
 import { PiePaginaComponent } from './pie-pagina/pie-pagina.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
+import { CrearReporteComponent } from './crear-reporte/crear-reporte.component';
+import { CrearCuentaComponent } from './crear-cuenta/crear-cuenta.component';
 
 const rutas:Routes=[
 {path:"", component: InicioComponent},
@@ -19,7 +22,10 @@ const rutas:Routes=[
     AppComponent,
     CabeceraComponent,
     PiePaginaComponent,
-    InicioComponent
+    InicioComponent,
+    IniciarSesionComponent,
+    CrearReporteComponent,
+    CrearCuentaComponent
   ],
   imports: [
     BrowserModule,
