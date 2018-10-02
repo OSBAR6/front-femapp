@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -29,8 +32,11 @@ const rutas:Routes=[
   ],
   imports: [
     BrowserModule,
+    HttpModule,
+    HttpClientModule,
     NgbModule,
-    RouterModule.forRoot(rutas)
+    RouterModule.forRoot(rutas),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
